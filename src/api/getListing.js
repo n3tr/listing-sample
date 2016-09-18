@@ -1,9 +1,12 @@
 function getListing() {
-  //
+
+  // see https://github.com/github/fetch
   // return fetch(...).then((response) => {
   //   return response.json()
   // })
 
+
+  // TODO: Remove code below
   // Dummy fetch promise
   return new Promise(function(resolve, reject){
     const mockJsonResponse = [
@@ -24,8 +27,12 @@ function getListing() {
       }
     ]
 
-    resolve(mockJsonResponse)
+    setTimeout(() => {
+      resolve(mockJsonResponse)
+    }, 1000)
   })
+  // TODO: // Remove
+
 }
 
 export default getListing

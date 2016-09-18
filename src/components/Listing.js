@@ -7,12 +7,7 @@ class Listing extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      allListing: [ {
-
-        title: 'Title 1'
-      }, {
-        title: 'Title 2'
-      } ]
+      allListing: []
     }
   }
 
@@ -28,6 +23,10 @@ class Listing extends React.Component {
   }
 
   renderListing() {
+    if (this.state.allListing.length === 0) {
+      return <p>Loading...</p>
+    }
+
     return this.state.allListing.map((listing, idx) => {
       return <ListingItem listing={listing} key={idx} />
     })
