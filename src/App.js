@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Listing from './components/Listing'
+import ListingAExp from './containers/ListingAExp'
+import ListingBExp from './containers/ListingBExp'
 
 class App extends Component {
   render() {
@@ -12,10 +13,10 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div className="left fifty-p">
-          <Listing />
+          <ListingAExp />
         </div>
         <div className="right fifty-p">
-          <Listing />
+          <ListingBExp />
         </div>
       </div>
     );
