@@ -6,6 +6,7 @@
     "react-scripts": "0.4.2"
   },
   "dependencies": {
+    "css-loader": "^0.25.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "superagent": "^2.2.0"

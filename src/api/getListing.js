@@ -38,7 +38,6 @@ function getListing() {
         .then((json) => {
           const listing = json.hits.hits.map((item) => {
             const url = item._source.thumbnail.replace('/t/', '/m/')
-            console.log('url:', url);
             return {
               'id': item._id,
               'title': item._source.title,
