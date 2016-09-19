@@ -6,7 +6,7 @@ function ListingItem(props) {
   return (
     <div className="itemStyle">
       <div className="item__image">
-        <img src={listing.thumbnail} />
+        <img role="presentation" src={listing.thumbnail} />
       </div>
       <div className="item__info">
         <p className="title">{listing.title}</p>
