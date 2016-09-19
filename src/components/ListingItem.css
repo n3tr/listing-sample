@@ -1,20 +1,52 @@
 .itemStyle {
-  color: 'black';
-  WebkitTransition: 'all';
-  msTransition: 'all';
+  color: black;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-align: left;
+  padding: 8px;
 }
 
 .primaryStyle {
-  color: 'black'
+  color: black
 }
 
 .secStyle {
-  color: 'gray';
+  color: gray;
   font-size: '80%';
   font-style: italic;
 }
 
-.imageStyle {
-  width: 100;
-  height: 100;
+.item__image {
+  float: left;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: grey;
+  position: relative;
+}
+
+.item__image img {
+  height: 100px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.item__info {
+  float: left;
+  width: 70%;
+  padding: 8px;
+}
+
+.title {
+  margin: 0;
+}
+
+.highlight {
+  color: grey;
 }

@@ -5,17 +5,13 @@ function ListingItem(props) {
   const listing = props.listing
   return (
     <div className="itemStyle">
-      <table>
-        <tbody>
-          <tr>
-            <td><img className="imageStyle" src={listing.thumbnail} /></td>
-            <td>{listing.title}</td>
-          </tr>
-          <tr>
-            <td colSpan="2" className="secStyle">{listing.highlight}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="item__image">
+        <img src={listing.thumbnail} />
+      </div>
+      <div className="item__info">
+        <p className="title">{listing.title}</p>
+        <p className="highlight">{listing.highlight}</p>
+      </div>
     </div>
   )
 }
