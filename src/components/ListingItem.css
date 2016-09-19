@@ -1,0 +1,20 @@
+.itemStyle {
+  color: 'black';
+  WebkitTransition: 'all';
+  msTransition: 'all';
+}
+
+.primaryStyle {
+  color: 'black'
+}
+
+.secStyle {
+  color: 'gray';
+  font-size: '80%';
+  font-style: italic;
+}
+
+.imageStyle {
+  width: 100;
+  height: 100;
+}
