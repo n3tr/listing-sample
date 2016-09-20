@@ -3,5 +3,5 @@ import fetchableListing from './fetchableListing'
 import Listing from '../components/Listing'
 import getListing from '../api/getListing'
 
-const ListingAExp = fetchableListing(Listing, getListing)
+const ListingAExp = fetchableListing(Listing, getListing.bind(null, "kd"))
 export default ListingAExp
